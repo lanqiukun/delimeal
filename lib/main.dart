@@ -32,7 +32,8 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     print('init state');
-    for (var item in DUMMY_MEALS) _availableMeals.add(item);
+
+    _availableMeals = [...DUMMY_MEALS];
 
     // TODO: implement initState
     super.initState();
